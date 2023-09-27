@@ -1,11 +1,13 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import Intro from './sections/Intro'
+import Navbar from './sections/Navbar'
+import Project from './sections/Project'
 
 function App() {
   return (
     <>
-      <div className="container mx-auto bg-gray-200 rounded-xl">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-      </div>
+      <Navbar />
+      <Intro />
+      <Project />
     </>
   )
 }
