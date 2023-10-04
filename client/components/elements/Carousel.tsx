@@ -4,7 +4,7 @@ import projects from '../../../public/data/projects'
 export default function Projects() {
   return (
     <>
-      <div className="carousel w-full">
+      <div className="carousel flex-1 w-full h-[50vh] overflow-hidden">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -15,7 +15,7 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={`${project.name} project thumbnail`}
-                className="w-full"
+                className="object-contain w-full"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
             </div>
@@ -25,15 +25,15 @@ export default function Projects() {
                 href={`#slide${
                   (index - 1 + projects.length) % projects.length
                 }`}
-                className="btn btn-circle bg-neutral-focus hover:bg-success"
+                className="btn btn-circle bg-neutral-focus text-neutral-content hover:bg-success"
               >
-                ❮
+                ←
               </a>
               <a
                 href={`#slide${(index + 1) % projects.length}`}
-                className="btn btn-circle bg-neural-focus hover:bg-success"
+                className="btn btn-circle bg-neutral-focus text-neutral-content hover:bg-success"
               >
-                ❯
+                →
               </a>
             </div>
           </div>
