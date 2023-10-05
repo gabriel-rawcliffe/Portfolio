@@ -1,4 +1,12 @@
 export default function Nabar() {
+  function downloadCV() {
+    const fileUrl = '/data/Gabriel-Rawcliffe-cv.pdf'
+    const link = document.createElement('a')
+    link.href = fileUrl
+    link.download = 'Gabriel-Rawcliffe-CV.pdf'
+    link.click()
+  }
+
   return (
     <div className="navbar bg-accent">
       <div className="navbar-start">
@@ -7,6 +15,10 @@ export default function Nabar() {
         </article>
       </div>
       <div className="navbar-end">
+        <button className="btn btn-primary me-1" onClick={() => downloadCV()}>
+          Download <br />
+          CV
+        </button>
         <a
           href="https://github.com/gabriel-rawcliffe"
           className="btn btn-ghost btn-circle"

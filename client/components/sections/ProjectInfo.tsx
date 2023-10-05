@@ -1,6 +1,5 @@
 import { ProjectData } from '../../../models/data'
-import CloudyEmbed from '../elements/CloudyEmbed'
-import WishConnectEmbed from '../elements/WishConnectEmbed'
+
 interface Props {
   project: ProjectData
   toggleInfo: () => void
