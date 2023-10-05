@@ -26,11 +26,11 @@ export default function Intro() {
   return (
     <>
       {!showInfo && (
-        <div className="bg-neutral w-screen h-fit">
+        <div className="bg-base w-screen h-fit">
           <div className="h-full flex flex-wrap">
             <div className="m-5 flex-1 h-full min-w-[300px]">
-              <article className="prose">
-                <p>
+              <article className="prose text-base-content">
+                <p className="text-base-content">
                   {`I am a developer with a background in research science. I
                 completed Dev Academy Aotearoa's emersive full-stack course in
                 2023 in order to facilitate a transition into the tech industry.
@@ -38,8 +38,8 @@ export default function Intro() {
                 problems, communicate ideas and help people, communities and the
                 environment.`}
                 </p>
-                <h2>Project portfolio:</h2>
-                <p className="">
+                <h2 className="text-base-content">Project portfolio:</h2>
+                <p className="text-base-content">
                   The work presented here is a selection of personal or group
                   projects that I have produced since June 2023. Please scroll
                   through the selection and click on the projects to see more
