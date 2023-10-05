@@ -1,13 +1,6 @@
-interface projectData {
-  name: string
-  blurb: string
-  contribution: string
-  link: string
-  repoLink: string
-  image: string
-}
+import { ProjectData } from '../../models/data'
 
-const projects: projectData[] = [
+const projects: ProjectData[] = [
   {
     name: 'Beat-Blocks',
     blurb:
@@ -36,6 +29,8 @@ const projects: projectData[] = [
     link: 'https://vimeo.com/870865386/c36bf3e500?share=copy',
     repoLink: 'https://github.com/gabriel-rawcliffe/wish-connect-copy',
     image: '/images/wishconnect.png',
+    video:
+      'https://player.vimeo.com/video/870865386?h=c36bf3e500&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
   },
   {
     name: 'Learning Blog',
@@ -54,6 +49,8 @@ const projects: projectData[] = [
     link: 'https://vimeo.com/870895310/741c2d4572?share=copy',
     repoLink: 'https://github.com/gabriel-rawcliffe/cloudy-cocktails',
     image: '/images/cloudy.png',
+    video:
+      'https://player.vimeo.com/video/870895310?h=741c2d4572&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
   },
 ]
 

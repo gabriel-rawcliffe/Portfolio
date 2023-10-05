@@ -5,3 +5,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@media (max-width: 768px) {
+  .flex-wrap {
+    flex-direction: column;
+  }
+
+  .flex-1 {
+    order: 2; /* Change the order to display this div below */
+  }
+}
